@@ -4,28 +4,28 @@ const assets = [
   './index.html',
   './style.css',
   './script.js',
+  './manifest.json',
   './fajr.jpg',
   './dhuhr.jpg',
   './asr.jpg',
   './maghrib.jpg',
-  './isha.jpg',
-  './manifest.json'
+  './isha.jpg'
 ];
 
-// تثبيت ملفات الموقع في ذاكرة الموبايل
-self.addEventListener('install', installEvent => {
-  installEvent.waitUntil(
+// تثبيت الملفات في ذاكرة الموبايل
+self.addEventListener('install', e => {
+  e.waitUntil(
     caches.open(cacheName).then(cache => {
-      cache.addAll(assets);
+      return cache.addAll(assets);
     })
   );
 });
 
-// تشغيل الموقع حتى لو النت مقطوع
-self.addEventListener('fetch', fetchEvent => {
-  fetchEvent.respondWith(
-    caches.match(fetchEvent.request).then(res => {
-      return res || fetch(fetchEvent.request);
+// تشغيل الموقع من الذاكرة لو النت مقطوع
+self.addEventListener('fetch', e => {
+  e.respondWith(
+    caches.match(e.request).then(res => {
+      return res || fetch(e.request);
     })
   );
 });
