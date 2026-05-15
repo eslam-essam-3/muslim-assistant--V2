@@ -1,20 +1,21 @@
 {
-  "name": "مساعد المهندس المسلم",
+  "name": "مساعد المسلم",
   "short_name": "المسلم",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#10b981",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
   "icons": [
     {
       "src": "fajr.jpg",
       "sizes": "192x192",
-      "type": "image/jpeg"
+      "type": "image/jpg",
+      "purpose": "any maskable"
     },
     {
       "src": "fajr.jpg",
       "sizes": "512x512",
-      "type": "image/jpeg"
+      "type": "image/jpg"
     }
   ]
 }
