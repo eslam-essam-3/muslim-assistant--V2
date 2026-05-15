@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مساعدالمسلم</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-dynamic">
+    <div class="container">
+        <header class="main-header">
+            <h2>صدقة جارية على روح المغفور لها بإذن الله</h2>
+            <h1> الحاجة / امباركة محمد عتمان</h1>
+            <div id="clock" class="digital-clock">00:00:00</div>
+            <p id="date-display">جاري تحميل التاريخ...</p>
+            <p class="signature">صُمم بواسطة إسلام عصام</p>
+        </header>
+
+        <main class="main-grid">
+            <section class="card prayer-section">
+                <h3>🕌 مواقيت الصلاة</h3>
+                <div id="prayer-times" class="prayer-grid">
+                    </div>
+            </section>
+
+            <section class="card sunnan-section">
+                <h3>⁝ السنن الرواتب اليومية</h3>
+                <div class="sunnan-table">
+                    <div class="sunna-row"><span>الفجر</span> <strong>2 ركعة (قبل)</strong></div>
+                    <div class="sunna-row"><span>الظهر</span> <strong>4 قبل + 2 بعد</strong></div>
+                    <div class="sunna-row"><span>المغرب</span> <strong>2 ركعة (بعد)</strong></div>
+                    <div class="sunna-row"><span>العشاء</span> <strong>2 ركعة (بعد)</strong></div>
+                </div>
+            </section>
+
+            <section class="card doa-section">
+                <h3>🤲 أدعية للمتوفاة</h3>
+                <div class="doa-container">
+                    <p id="doa-text" class="doa-display">"اللهم اغفر لها وارحمها، وعافها واعف عنها، وأكرم نزلها، ووسع مدخلها، واغسلها بالماء والثلج والبرد."</p>
+                    <button class="btn-next-doa" onclick="nextDoa()">دعاء آخر</button>
+                </div>
+            </section>
+
+            <section class="card azkar-section">
+                <h3>📖 الأذكار والورد اليومي</h3>
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="loadAzkar('sabah')">الصباح</button>
+                    <button class="tab-btn" onclick="loadAzkar('masa')">المساء</button>
+                    <button class="tab-btn" onclick="loadAzkar('adya')">أدعية</button>
+                </div>
+                <div class="azkar-box">
+                    <p id="zekr-text">اختر نوع الأذكار للبدء</p>
+                </div>
+                <div class="azkar-controls">
+                    <button id="count-btn" class="btn-count" onclick="updateCount()">تسبيح (0)</button>
+                    <button id="next-btn" class="btn-next" onclick="nextZekr()">التالي</button>
+                </div>
+            </section>
+
+            <section class="card quran-section">
+                <h3>📖 المصحف الشريف</h3>
+                <div class="selection-container">
+                    <select id="surahSelect"><option value="">اختر السورة</option></select>
+                    <select id="juzSelect"><option value="">اختر الجزء</option></select>
+                </div>
+                <div id="quranContent" class="quran-display">اختر لبدء القراءة</div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then(reg => console.log('التطبيق جاهز للعمل'))
+        .catch(err => console.log('فشل التسجيل:', err));
+    });
+  }
+</script>
+</script></body>
+</html>
