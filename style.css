@@ -1,3 +1,77 @@
+/* ========================================================
+   1. إعدادات الدارك مود والألوان الرسمية (توضع أول الملف)
+   ======================================================== */
+:root {
+  --bg-card: rgba(255, 255, 255, 0.75); /* خلفية بيضاء شفافة رايقة للمظهر الفاتح */
+  --text-color: #2c3e50; /* لون الخط الافتراضي */
+  --bg-mushaf: #fdfbf7; /* خلفية المصحف مريحة وقارئة جداً */
+  --text-mushaf: #1a252f; /* خط المصحف واضح وقوي */
+}
+
+[data-theme="dark"] {
+  --bg-card: rgba(25, 25, 30, 0.9); /* خلفية داكنة فخمة للمظهر الداكن */
+  --text-color: #f1f2f6; /* لون الخط هيقلب أبيض منور */
+  --bg-mushaf: #222225; /* خلفية المصحف داكنة ومريحة للعين بالليل */
+  --text-mushaf: #ffffff; /* خط المصحف أبيض ناصع */
+}
+
+/* ========================================================
+   2. تنسيق الكروت العام (تعديل كود الـ .card القديم)
+   ======================================================== */
+.card {
+  background: var(--bg-card) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  color: var(--text-color) !important;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* إجبار النصوص العادية تقلب تلقائي مع المظهرين */
+.card h3, .card p, .card span, .sunnan-table, .doa-section {
+  color: var(--text-color) !important;
+}
+
+/* ========================================================
+   3. حل مشكلة مواقيت الصلاة (الخط أبيض دائماً فوق الصور الغامقة)
+   ======================================================== */
+.prayer-grid .card h3, 
+.prayer-grid .prayer-item, 
+.prayer-grid span, 
+.prayer-grid strong {
+  color: #ffffff !important;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.95) !important; /* ظل أسود قوي عشان الكلام يقرا بوضوح */
+}
+
+/* ========================================================
+   4. حل مشكلة المصحف الشريف (وضوح الآيات ومنع السواد)
+   ======================================================== */
+.quran-section, #quran-container, .surah-text {
+  background-color: var(--bg-mushaf) !important;
+  color: var(--text-mushaf) !important;
+  padding: 25px;
+  border-radius: 12px;
+  line-height: 2.2 !important;
+  font-size: 1.4rem !important;
+  transition: all 0.3s ease;
+}
+/* ستايل الزرار نفسه عشان يظهر بشكل دائري متناسق */
+.btn-dark-mode {
+  padding: 6px 14px;
+  background-color: var(--bg-card);
+  color: var(--text-color);
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Cairo', sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
 /* 1. الإعدادات العامة والمتغيرات */
 :root {
     --accent: #10b981;
@@ -15,7 +89,10 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    transition: background-image 1s ease-in-out;
+    body {
+    /* بدل transition: all 0.3s; */
+    transition: background-color 0.3s ease, color 0.3s ease, background-image 0.5s ease;
+}
     background-color: #0f172a; 
 }
 
@@ -45,17 +122,61 @@ body {
 }
 
 /* 3. تنسيق الكروت العام */
+/* تطبيق الخلفية المتغيرة على الكروت مع الحفاظ على تأثير الزجاج الشفاف الأصلي بتاعك */
 .card {
-    background: var(--card-bg) !important;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 15px;
-    padding: 25px;
-    margin-bottom: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  background: var(--bg-card) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
+/* تطبيق لون النص المتغير على النصوص العادية جوه الكروت */
+.card h3, .card span, .card p, .sunnan-table, .doa-section {
+  color: var(--text-color) !important;
+}
+
+/* حل مشكلة مواقيت الصلاة: الحفاظ على اللون الأبيض دائماً فوق صور الخلفيات */
+.prayer-grid .card, 
+.prayer-grid .prayer-item, 
+.prayer-grid span, 
+.prayer-grid strong {
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8) !important; /* ظل أسود خفيف عشان الكلام يبان بوضوح */
+}
+/* 1. تعريف الألوان الأساسية في أول الملف */
+:root {
+  --bg-card: rgba(255, 255, 255, 0.45); /* خلفية بيضاء شفافة جداً للمظهر الفاتح */
+  --text-color: #2c3e50; /* لون الخط الافتراضي */
+}
+
+[data-theme="dark"] {
+  --bg-card: rgba(20, 20, 25, 0.75); /* خلفية داكنة شفافة فخمة للمظهر الداكن */
+  --text-color: #f1f2f6; /* لون الخط هيقلب أبيض */
+}
+
+/* 2. تعديل كود الـ .card الرئيسي ليقبل التغيير الديناميكي */
+.card {
+  background: var(--bg-card) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+/* 3. تطبيق لون النص على العناوين والنصوص داخل الكروت */
+.card h3, .card span, .card div, .card strong, .card p {
+  color: var(--text-color) !important;
+  transition: color 0.3s ease;
+}
 /* 4. مواقيت الصلاة والسنن */
 .prayer-grid, .sunnan-table {
     display: flex;
@@ -292,4 +413,25 @@ body.dark-mode {
 body.dark-mode .card, body.dark-mode .prayer-card {
     background: rgba(30, 41, 59, 0.9);
     border-color: #334155;
+}
+/* تنسيق خاص لحل مشكلة الحروف المتفرقة في الآيفون وتجميل الخط */
+#quranContent {
+    font-family: 'Amiri Quran', 'Me Quran', 'Traditional Arabic', serif !important;
+    font-size: 24px !important;
+    line-height: 2.2 !important;
+    text-align: justify;
+    text-align-last: center;
+    direction: rtl;
+    padding: 15px;
+    /* حل مشكلة أجهزة أبل في معالجة النصوص العربية المشكلة */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+.verse-num {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #22c55e;
+    margin: 0 5px;
+    font-weight: bold;
 }

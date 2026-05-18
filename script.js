@@ -37,6 +37,7 @@ const m_doas = [
 // 2. قائمة الأذكار (تقدر تزيد فيها براحتك)
 const azkarData = {
     "sabah": [
+        "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السمَاوَاتِ وَمَا فِي الْأَرْضِ ۚ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ",
         "أصبحنا وأصبح الملك لله، والحمد لله، لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير.",
         "اللهم أنت ربي لا إله إلا أنت، خلقتني وأنا عبدك، وأنا على عهدك ووعدك ما استطعت، أعوذ بك من شر ما صنعت، أبوء لك بنعمتك علي، وأبوء بذنبي فاغفر لي فإنه لا يغفر الذنوب إلا أنت.",
         "رضيت بالله رباً، وبالإسلام ديناً، وبمحمد ﷺ نبياً (3 مرات).",
@@ -47,6 +48,7 @@ const azkarData = {
         "اللهم ما أصبح بي من نعمة أو بأحد من خلقك فمنك وحدك لا شريك لك، فلك الحمد ولك الشكر."
     ],
     "masa": [
+        "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُ مَا فِي السمَاوَاتِ وَمَا فِي الْأَرْضِ ۚ مَن ذَا الَّذِي يَشْفَعُ عِندَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ",
         "أمسينا وأمسى الملك لله، والحمد لله، لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير.",
         "اللهم بك أمسينا، وبك أصبحنا، وبك نحيا، وبك نموت، وإليك المصير.",
         "أعوذ بكلمات الله التامات من شر ما خلق (3 مرات).",
@@ -57,7 +59,11 @@ const azkarData = {
     ],
     "adya": [
         "اللهم اهدني وسددني، واجعلني مباركاً أينما كنت.",
+        "رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ.",
+        "رَبَّنَا ظَلَمْنَا أَنفُسَنَا وَإِن لَّمْ تَغْفِر_لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ.",
+        "رَبَّنَا مَا خَلَقْتَ هَذا بَاطِلاً سُبْحَانَكَ فَقِنَا عَذَابَ النَّارِ رَبَّنَا إِنَّكَ مَن تُدْخِلِ النَّارَ فَقَدْ أَخْزَيْتَهُ وَمَا لِلظَّالِمِينَ مِنْ أَنصَارٍ رَّبَّنَا إِنَّنَا سَمِعْنَا مُنَادِيًا يُنَادِي لِلإِيمَانِ أَنْ آمِنُوا بِرَبِّكُمْ فَآمَنَّا رَبَّنَا فَاغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّئَاتِنَا وَتَوَفَّنَا مَعَ الْأَبْرَارِ رَبَّنَا وَآتِنَا مَا وَعَدتَّنَا عَلَى رُسُلِكَ وَلَا تُخْزِنَا يَوْمَ الْقِيَامَةِ إِنَّكَ لَا تُخْلِفُ الْمِيعَادَ.",
         "اللهم إني أسألك علماً نافعاً، ورزقاً طيباً، وعملاً متقبلاً.",
+        "رَبَّنَا لَا تُؤَاخِذْنَا إِن نَّسِينَا أَوْ أَخْطَأْنَا رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِن قَبْلِنَا رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا أَنتَ مَوْلَانَا فَانصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ.",
         "ربنا آتنا في الدنيا حسنة وفي الآخرة حسنة وقنا عذاب النار.",
         "اللهم إنك عفو كريم تحب العفو فاعفُ عني.",
         "لا إله إلا أنت سبحانك إني كنت من الظالمين.",
@@ -70,51 +76,76 @@ const azkarData = {
 let currentAzkarList = azkarData.sabah;
 let zekrIndex = 0;
 let doaIndex = 0;
+// حفظ مكان العناصر في الذاكرة لسرعة الاستجابة
+let zekrDisplayElement = null;
+let countBtnElement = null;
+let doaDisplayElement = null;
 
 // --- 1. تشغيل التطبيق عند التحميل (الـ Refresh) ---
 window.onload = () => {
+    // كاش للعناصر عشان العداد ميعلقش
+    zekrDisplayElement = document.getElementById('zekr-text');
+    countBtnElement = document.getElementById('count-btn');
+    doaDisplayElement = document.getElementById('doa-text');
     updateClock();
     setInterval(updateClock, 1000);
     updateDate();
-    updatePrayers();
-    initQuranAndJuz();
     
-    // تحميل أذكار الصباح وجلب عداداتها المحفوظة أوتوماتيكياً
+    // بننادي الدالة علطول وهي هتتصرف لو فيه نت أو مفيش
+    updatePrayers();
+    
+    if (navigator.onLine) {
+        initQuranAndJuz();
+    } else {
+        const quranDisplay = document.getElementById('quranContent');
+        if (quranDisplay) quranDisplay.innerText = "المصحف يتطلب اتصالاً بالإنترنت لعرض الآيات.";
+    }
+    
     loadAzkar('sabah'); 
     updateDoaUI();
 
-    // استرجاع الوضع الليلي المحفوظ
     if (localStorage.getItem('theme') === 'dark') {
         document.body.classList.add('dark-mode');
     }
 
-    // طلب إذن التنبيهات
     if ("Notification" in window) {
         Notification.requestPermission();
     }
-    // فحص مواقيت الصلاة كل دقيقة
-    setInterval(() => {
-        // تأكد من اسم المتغير اللي شايل المواقيت عندك، غالباً بيكون prayerTimes
-        if (typeof prayerTimes !== 'undefined') {
-            checkPrayerNotifications(prayerTimes);
-        }
-    }, 60000);
 };
 
 // --- 2. وظيفة تحديث واجهة الذكر (عشان الفصل) ---
 function updateZekrUI() {
     const currentZekr = currentAzkarList[zekrIndex];
     const zekrDisplay = document.getElementById('zekr-text');
-    const countBtn = document.getElementById('count-btn');
+    const countBtn = document.getElementById('count-btn'); 
 
     if (zekrDisplay) zekrDisplay.innerText = currentZekr;
 
     if (countBtn) {
         // بنجيب القيمة المتخزنة باسم الذكر ده بالظبط من الذاكرة
-        // لو مش موجودة (أول مرة) بيحط 0
+        // لو ملوش عد قديم (أول مرة يفتح) بيظهر 0 تلقائياً ويبدأ من الصفر
         const savedCount = localStorage.getItem('tasbih_' + currentZekr) || 0;
         countBtn.innerText = savedCount + " تسبيح";
     }
+}
+function updateAzkarCount(btn) {
+    const zekrDisplay = document.getElementById('zekr-text');
+    if (!zekrDisplay) return;
+
+    const zekrText = zekrDisplay.innerText; // مسكنا النص بتاع الذكر أو الدعاء الحالي
+    
+    // بنطلع الرقم الحالي المكتوب على الزرار ونزوده 1
+    let current = parseInt(btn.innerText.replace(/[^0-9]/g, '')) || 0;
+    let newValue = current + 1;
+    
+    // تحديث الرقم على الشاشة فوراً
+    btn.innerText = newValue + " تسبيح";
+
+    // حفظ العداد في الذاكرة باسم الذكر ده هو بس عشان يفضل منفصل عن الباقي
+    localStorage.setItem('tasbih_' + zekrText, newValue);
+
+    // هزة خفيفة للموبايل
+    if (navigator.vibrate) navigator.vibrate(50);
 }
 // دالة لفحص المواقيت وإرسال تنبيه في وقت الأذان
 function checkPrayerNotifications(times) {
@@ -149,7 +180,7 @@ function sendNotification(title, body) {
 }
 
 // --- 3. وظيفة زيادة العداد والحفظ باسم الذكر ---
-function updateCount(btn) {
+function updateAzkarCount(btn) {
     const zekrDisplay = document.getElementById('zekr-text');
     if (!zekrDisplay) return;
 
@@ -301,24 +332,6 @@ function loadAzkar(category) {
     updateZekrUI(); 
 }
 
-// وظيفة العداد (التسبيح)
-function updateCount(btn) {
-    // 1. هات نص الذكر الحالي
-    const zekrText = document.getElementById('zekr-text').innerText;
-    
-    // 2. استخرج الرقم وزوده
-    let current = parseInt(btn.innerText) || 0;
-    let newValue = current + 1;
-    
-    // 3. حدث شكل الزرار
-    btn.innerText = newValue + " تسبيح";
-
-    // 4. الحفظ في الذاكرة (مهم جداً السطر ده)
-    localStorage.setItem('tasbih_' + zekrText, newValue);
-
-    if (navigator.vibrate) navigator.vibrate(50);
-}
-
 function nextZekr() {
     zekrIndex = (zekrIndex + 1) % currentAzkarList.length;
     updateZekrUI();
@@ -362,36 +375,64 @@ function updateDoaUI() {
 // 6. القرآن الكريم (سور وأجزاء)
 async function initQuranAndJuz() {
     const sSelect = document.getElementById('surahSelect');
-    const jSelect = document.getElementById('juzSelect');
     const display = document.getElementById('quranContent');
+    if (!sSelect || !display) return;
 
-    // تحميل السور
-    try {
-        const resS = await fetch('https://api.alquran.cloud/v1/surah');
-        const dataS = await resS.json();
-        dataS.data.forEach(s => sSelect.add(new Option(s.name, s.number)));
-        
-        // تحميل الأجزاء (30 جزء)
-        for (let i = 1; i <= 30; i++) {
-            jSelect.add(new Option(`الجزء ${i}`, i));
+    // أسماء الـ 114 سورة بالترتيب عشان تظهر في القائمة فوراً أونلاين وأوفلاين بدون نت
+    const surahNames = [
+        "الفاتحة","البقرة","آل عمران","النساء","المائدة","الأنعام","الأعراف","الأنفال","التوبة","يونس","هود","يوسف","الرعد","إبراهيم","الحجر","النحل","الإسراء","الكهف","مريم","طه","الأنبياء","الحج","المؤمنون","النور","الفرقان","الشعراء","النمل","القصص","العنكبوت","الروم","لقمان","السجدة","الأحزاب","سبأ","فاطر","يس","الصافات","ص","الزمر","غافر","فصلت","الشورى","الزخرف","الدخان","الجاثية","الأحقاف","محمد","الفتح","الحجرات","ق","الذاريات","الطور","النجم","القمر","الرحمن","الواقعة","الحديد","المجادلة","الحشر","الممتحنة","الصف","الجمعة","المنافقون","التغابن","الطلاق","التحريم","الملك","القلم","الحاقة","المعارج","نوح","الجن","المزمل","المدثر","القيامة","الإنسان","المرسلات","النبأ","النازعات","عبس","التكوير","الانفطار","المطففين","الانشقاق","البروج","الطارق","الأعلى","الغاشية","الفجر","البلد","الشمس","الليل","الضحى","الشرح","التين","العلق","القدر","البينة","الزلزلة","العاديات","القارعة","التكاثر","العصر","الهمزة","الفيل","قريش","الماعون","الكوثر","الكافرون","النصر","المسد","الإخلاص","الفلق","الناس"
+    ];
+
+    // تعبئة القائمة بالـ 114 سورة فوراً
+    sSelect.innerHTML = '<option value="">اختر السورة...</option>';
+    surahNames.forEach((name, index) => {
+        sSelect.add(new Option(`سورة ${name}`, index + 1));
+    });
+
+    // عند اختيار السورة
+    sSelect.onchange = async () => {
+        const surahId = sSelect.value;
+        if (!surahId) {
+            display.innerText = "الرجاء اختيار سورة لعرض الآيات.";
+            return;
         }
 
-        sSelect.onchange = async () => {
-            if(!sSelect.value) return;
-            display.innerText = "جاري تحميل السورة...";
-            const res = await fetch(`https://api.alquran.cloud/v1/surah/${sSelect.value}`);
-            const data = await res.json();
-            display.innerHTML = data.data.ayahs.map(a => `${a.text} <span class="verse-num">(${a.numberInSurah})</span>`).join(' ');
-        };
+        // 1. جلب السورة من الذاكرة المحلية (لو فتحتها قبل كده أوفلاين)
+        const localKey = `quran_surah_${surahId}`;
+        const savedSurah = localStorage.getItem(localKey);
 
-        jSelect.onchange = async () => {
-            if(!jSelect.value) return;
-            display.innerText = "جاري تحميل الجزء...";
-            const res = await fetch(`https://api.alquran.cloud/v1/juz/${jSelect.value}/quran-uthmani`);
+        if (savedSurah) {
+            const surahData = JSON.parse(savedSurah);
+            display.innerHTML = surahData.verses.map((text, i) => {
+                return `${text} <span class="verse-num" style="color: #2ecc71; font-weight: bold;">(${i + 1})</span>`;
+            }).join(' ');
+            return;
+        }
+
+        // 2. لو مش متسيفة، نجبها من السيرفر بالنت ونعرضها ونحفظها هي لوحدها
+        display.innerText = "جاري تحميل السورة بالتشكيل الحقيقي... ثواني";
+        try {
+            const res = await fetch(`https://api.alquran.cloud/v1/surah/${surahId}/quran-uthmani`);
             const data = await res.json();
-            display.innerHTML = data.data.ayahs.map(a => `${a.text} <span class="verse-num">(${a.surah.name})</span>`).join(' ');
-        };
-    } catch(e) { display.innerText = "خطأ في الاتصال بالمصحف."; }
+            
+            const surahData = {
+                name: data.data.name,
+                verses: data.data.ayahs.map(ayah => ayah.text)
+            };
+
+            // حفظ السورة دي لوحدها في المتصفح عشان تشتغل أوفلاين بعد كده
+            localStorage.setItem(localKey, JSON.stringify(surahData));
+
+            // عرض الآيات
+            display.innerHTML = surahData.verses.map((text, i) => {
+                return `${text} <span class="verse-num" style="color: #2ecc71; font-weight: bold;">(${i + 1})</span>`;
+            }).join(' ');
+
+        } catch (err) {
+            display.innerHTML = '<p style="text-align:center; color:#ff7675;">هذه السورة غير محملة أوفلاين وتتطلب اتصالاً بالإنترنت لفتحها لأول مرة.</p>';
+            console.error(err);
+        }
+    };
 }
 // وظيفة النسخ الذكية
 function copyText(elementId, btn) {
@@ -408,7 +449,7 @@ function copyText(elementId, btn) {
 }
 
 // وظيفة العداد (التسبيح)
-function updateCount(btn) {
+function updateGeneralTasbih(btn) {
     // 1. استخراج الرقم بس من النص (هياخد الـ 0 ويسيب كلمة تسبيح)
     let current = parseInt(btn.innerText) || 0;
     
@@ -425,46 +466,88 @@ function updateCount(btn) {
     if (navigator.vibrate) navigator.vibrate(50);
 }
 // وظيفة جلب مواقيت الصلاة
-async function getPrayerTimes() {
-    const city = "Fayoum";
-    const country = "Egypt";
-    const url = `https://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}&method=5`; // method 5 للهيئة العامة المصرية للمساحة
+async function getPrayerTimes(lat = null, lng = null) {
+    let url = '';
+    
+    if (lat && lng) {
+        url = `https://api.aladhan.com/v1/timings?latitude=${lat}&longitude=${lng}&method=5`;
+    } else {
+        url = `https://api.aladhan.com/v1/timingsByCity?city=Fayoum&country=Egypt&method=5`;
+    }
 
     try {
         const response = await fetch(url);
         const data = await response.json();
         const timings = data.data.timings;
 
-        // أسماء الصلوات بالعربي اللي هنعرضها
-        const prayerNames = {
-            "Fajr": "الفجر",
-            "Sunrise": "الشروق",
-            "Dhuhr": "الظهر",
-            "Asr": "العصر",
-            "Maghrib": "المغرب",
-            "Isha": "العشاء"
-        };
+        // الحفظ في الذاكرة عشان لما يفصل نت نلاقيها موجودة
+        localStorage.setItem('lastCachedPrayers', JSON.stringify(timings));
 
-        const prayerDiv = document.getElementById('prayer-times');
-        prayerDiv.innerHTML = ''; // مسح كلمة "جاري التحميل"
+        // تشغيل دالة العرض على الشاشة
+        displayPrayers(timings);
 
-        // عرض الأوقات في الصفحة
-        for (let key in prayerNames) {
-            prayerDiv.innerHTML += `
-                <div class="prayer-card">
-                    <span>${prayerNames[key]}</span>
-                    <strong>${timings[key]}</strong>
-                </div>
-            `;
-        }
     } catch (error) {
-        console.error("خطأ في جلب المواقيت:", error);
-        document.getElementById('prayer-times').innerHTML = "<p>تأكد من الاتصال بالنت لتحديث المواقيت</p>";
+        console.error("خطأ في جلب المواقيت، محاولة عرض المواقيت المحفوظة:", error);
+        
+        // لو حصل خطأ (مفيش نت)، بنحاول نجيب آخر مواقيت متخزنة
+        const savedTimings = localStorage.getItem('lastCachedPrayers');
+        if (savedTimings) {
+            const timings = JSON.parse(savedTimings);
+            displayPrayers(timings);
+        } else {
+            document.getElementById('prayer-times').innerHTML = "<p>تتطلب مواقيت الصلاة اتصالاً بالإنترنت لأول مرة.</p>";
+        }
     }
 }
 
+// دالة مساعدة جديدة عشان تعرض المواقيت في الـ HTML ومنكررش الكود
+function displayPrayers(timings) {
+    const prayerNames = {
+        "Fajr": "الفجر",
+        "Sunrise": "الشروق",
+        "Dhuhr": "الظهر",
+        "Asr": "العصر",
+        "Maghrib": "المغرب",
+        "Isha": "العشاء"
+    };
+
+    const prayerDiv = document.getElementById('prayer-times');
+    if (prayerDiv) {
+        prayerDiv.innerHTML = ''; 
+        for (let key in prayerNames) {
+            let time = timings[key];
+            let time12 = typeof formatTime12 === "function" ? formatTime12(time) : time; 
+            prayerDiv.innerHTML += `
+                <div class="prayer-card">
+                    <span>${prayerNames[key]}</span>
+                    <strong>${time12}</strong>
+                </div>
+            `;
+        }
+    }
+    
+    if (typeof changeBackground === "function") changeBackground(timings);
+    if (typeof checkPrayerNotifications === "function") checkPrayerNotifications(timings);
+}
+
 // تشغيل الوظيفة أول ما الموقع يفتح
-window.addEventListener('DOMContentLoaded', getPrayerTimes);
+window.addEventListener('DOMContentLoaded', () => {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                // لو وافق على الموقع، نبعت الإحداثيات للدالة
+                getPrayerTimes(position.coords.latitude, position.coords.longitude);
+            },
+            () => {
+                // لو رفض، تشتغل افتراضي على الفيوم
+                getPrayerTimes();
+            }
+        );
+    } else {
+        // لو المتصفح لا يدعم، تشتغل على الفيوم
+        getPrayerTimes();
+    }
+});
 function toggleDarkMode() {
     document.body.classList.toggle('dark-mode');
     const isDark = document.body.classList.contains('dark-mode');
@@ -475,31 +558,7 @@ function toggleDarkMode() {
 if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark-mode');
 }
-// دالة لفحص مواقيت الصلاة وإرسال تنبيه
-function checkPrayerNotifications(prayerTimes) {
-    const now = new Date();
-    const currentTime = now.getHours().toString().padStart(2, '0') + ":" + 
-                        now.getMinutes().toString().padStart(2, '0');
 
-    // قائمة الصلوات اللي عاوزين نراقبها
-    const prayers = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
-
-    prayers.forEach(prayer => {
-        if (prayerTimes[prayer] === currentTime) {
-            sendNotification("حان الآن موعد أذان " + prayer, "لا تنسَ ذكر الله وأداء الصلاة في وقتها.");
-        }
-    });
-}
-
-// دالة إرسال التنبيه الفعلي
-function sendNotification(title, body) {
-    if ("Notification" in window && Notification.permission === "granted") {
-        new Notification(title, {
-            body: body,
-            icon: 'icon.jpg' // الأيقونة اللي إحنا لسه ضايفينها
-        });
-    }
-}
 // 1. دالة فحص المواقيت وإرسال تنبيه في وقت الأذان
 function checkPrayerNotifications(times) {
     const now = new Date();
@@ -522,14 +581,117 @@ function checkPrayerNotifications(times) {
         }
     }
 }
+// ==================== كود تشغيل المصحف والأجزاء أوفلاين 100% ====================
 
-// 2. دالة إرسال التنبيه الفعلي للنظام
-function sendNotification(title, body) {
-    // التأكد إن المستخدم وافق على استقبال التنبيهات
-    if (Notification.permission === "granted") {
-        new Notification(title, {
-            body: body,
-            icon: 'icon.jpg' // هيستخدم الأيقونة الـ 512 اللي أنت عملتها
+// مصفوفة لتحديد السور اللي بيبدأ منها كل جزء من الـ 30 جزء
+const juzToSurahMap = {
+    1: 1,   2: 2,   3: 2,   4: 3,   5: 4,   6: 4,   7: 5,   8: 6,   9: 7,   10: 8,
+    11: 9,  12: 11, 13: 12, 14: 15, 15: 17, 16: 18, 17: 21, 18: 23, 19: 25, 20: 27,
+    21: 29, 22: 33, 23: 36, 24: 39, 25: 41, 26: 46, 27: 51, 28: 58, 29: 67, 30: 78
+};
+
+// الدالة الذكية المضمونة لجلب بيانات الـ 114 سورة كاملة بالرسم العثماني
+async function getFullOfflineQuran() {
+    try {
+        const response = await fetch('https://api.alquran.cloud/v1/quran/quran-uthmani');
+        const data = await response.json();
+        
+        const quranData = {};
+        data.data.surahs.forEach(surah => {
+            quranData[surah.number] = {
+                name: `سورة ${surah.name}`,
+                verses: surah.ayahs.map(ayah => ayah.text)
+            };
         });
+        return quranData;
+    } catch (e) {
+        console.log("النت مقطوع، يتم الاعتماد على الذاكرة المحلية المخزنة.");
+        return null;
     }
 }
+
+function initQuranAndJuz() {
+    const sSelect = document.getElementById('surahSelect');
+    const jSelect = document.getElementById('juzSelect'); // قائمة الأجزاء
+    const display = document.getElementById('quranContent');
+    if (!sSelect || !display) return;
+
+    // أسماء الـ 114 سورة كاملة للقائمة
+    const allSurahs = ["الفاتحة","البقرة","آل عمران","النساء","المائدة","الأنعام","الأعراف","الأنفال","التوبة","يونس","هود","يوسف","الرعد","إبراهيم","الحجر","النحل","الإسراء","الكهف","مريم","طه","الأنبياء","الحج","المؤمنون","النور","الفرقان","الشعراء","النمل","القصص","العنكبوت","الروم","لقمان","السجدة","الأحزاب","سبأ","فاطر","يس","الصافات","ص","الزمر","غافر","فصلت","الشورى","الزخرف","الدخان","الجاثية","الأحقاف","محمد","الفتح","الحجرات","ق","الذاريات","الطور","النجم","القمر","الرحمن","الواقعة","الحديد","المجادلة","الحشر","الممتحنة","الصف","الجمعة","المنافقون","التغابن","الطلاق","التحريم","الملك","القلم","الحاقة","المعارج","نوح","الجن","المزمل","المدثر","القيامة","الإنسان","المرسلات","النبأ","النازعات","عبس","التكوير","الانفطار","المطففين","الانشقاق","البروج","الطارق","الأعلى","الغاشية","الفجر","البلد","الشمس","الليل","الضحى","الشرح","التين","العلق","القدر","البينة","الزلزلة","العاديات","القارعة","التكاثر","العصر","الهمزة","الفيل","قريش","الماعون","الكوثر","الكافرون","النصر","المسد","الإخلاص","الفلق","الناس"];
+
+    // 1. ملء قائمة الـ 114 سورة فوراً
+    sSelect.innerHTML = '<option value="">اختر السورة...</option>';
+    allSurahs.forEach((name, index) => {
+        sSelect.add(new Option(`سورة ${name}`, index + 1));
+    });
+
+    // 2. ملء قائمة الأجزاء الـ 30 لو الـ ID موجود في الـ HTML
+    if (jSelect) {
+        jSelect.innerHTML = '<option value="">اختر الجزء...</option>';
+        for (let i = 1; i <= 30; i++) {
+            jSelect.add(new Option(`الجزء ${i}`, i));
+        }
+
+        // عند اختيار جزء، يحول قائمة السور على أول سورة في هذا الجزء تلقائياً
+        jSelect.onchange = () => {
+            const juzId = jSelect.value;
+            if (juzId && juzToSurahMap[juzId]) {
+                sSelect.value = juzToSurahMap[juzId];
+                sSelect.dispatchEvent(new Event('change')); // تفعيل عرض السورة فوراً
+            }
+        };
+    }
+
+    // 3. جلب وتخزين المصحف كاملًا في الخلفية أول ما يفتح بالنت
+    let cachedQuran = null;
+    getFullOfflineQuran().then(data => {
+        if (data) {
+            cachedQuran = data;
+            localStorage.setItem('local_quran_backup', JSON.stringify(data));
+        }
+    });
+
+    // 4. دالة عرض الآيات عند تغيير السورة (أونلاين أو أوفلاين)
+    sSelect.onchange = () => {
+        const surahId = sSelect.value;
+        if (!surahId) {
+            display.innerText = "اختر لبدء القراءة";
+            return;
+        }
+
+        const localBackup = localStorage.getItem('local_quran_backup');
+        const activeData = cachedQuran || (localBackup ? JSON.parse(localBackup) : null);
+
+        if (activeData && activeData[surahId]) {
+            const surah = activeData[surahId];
+            display.innerHTML = surah.verses.map((text, index) => {
+                return `${text} <span class="verse-num" style="color: #2ecc71; font-weight: bold;">(${index + 1})</span>`;
+            }).join(' ');
+        } else {
+            display.innerHTML = '<p style="text-align:center; color:#ff7675;">برجاء فتح الإنترنت لمرة واحدة فقط لتفعيل الـ 114 سورة أوفلاين بالكامل.</p>';
+        }
+    };
+}
+
+// تشغيل السكريبت مع تحميل الصفحة
+window.addEventListener('load', initQuranAndJuz);
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+// التأكد من اختيار المستخدم القديم عند فتح التطبيق
+if (localStorage.getItem('theme') === 'dark') {
+  document.documentElement.setAttribute('data-theme', 'dark');
+  darkModeToggle.innerHTML = '☀️ المظهر الفاتح';
+}
+
+// تشغيل التبديل عند الضغط على الزرار
+darkModeToggle.addEventListener('click', () => {
+  if (document.documentElement.getAttribute('data-theme') === 'dark') {
+    document.documentElement.removeAttribute('data-theme');
+    darkModeToggle.innerHTML = '🌙 المظهر الداكن';
+    localStorage.setItem('theme', 'light');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    darkModeToggle.innerHTML = '☀️ المظهر الفاتح';
+    localStorage.setItem('theme', 'dark');
+  }
+});
